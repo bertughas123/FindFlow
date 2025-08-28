@@ -104,7 +104,7 @@ Flask Web Framework
 
 1.⁠ ⁠*Projeyi İndirin*
 ⁠ bash
-git clone https://github.com/batuhnctlkaya/FindFlow.git
+git clone https://github.com/bertughas123/FindFlow.git
 cd FindFlow-iz
  ⁠
 
