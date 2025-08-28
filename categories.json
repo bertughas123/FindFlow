@@ -1,0 +1,2091 @@
+{
+  "Air Conditioner": {
+    "budget_bands": {
+      "tr": [
+        "8-15k₺",
+        "15-25k₺",
+        "25-35k₺",
+        "35-50k₺",
+        "50k₺+"
+      ],
+      "en": [
+        "8-15k₺",
+        "15-25k₺",
+        "25-35k₺",
+        "35-50k₺",
+        "50k₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "room_size",
+        "type": "single_choice",
+        "label": {
+          "tr": "Klima hangi büyüklükteki bir oda için kullanılacak?",
+          "en": "What size room will the air conditioner be used for?"
+        },
+        "emoji": "📏",
+        "tooltip": {
+          "tr": "Oda büyüklüğüne göre doğru BTU değerini seçmek önemlidir. Küçük odalar için 9000-12000 BTU, orta odalar için 12000-18000 BTU, büyük odalar için 18000+ BTU kapasiteli klimalar önerilir. Yanlış kapasite seçimi enerji tüketimini artırır.",
+          "en": "Choosing the right BTU value based on room size is important. Small rooms need 9000-12000 BTU, medium rooms need 12000-18000 BTU, large rooms need 18000+ BTU capacity. Wrong capacity selection increases energy consumption."
+        },
+        "options": [
+          {
+            "id": "small",
+            "label": {
+              "tr": "Küçük (9-15 m²)",
+              "en": "Small (9-15 m²)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (15-25 m²)",
+              "en": "Medium (15-25 m²)"
+            }
+          },
+          {
+            "id": "large",
+            "label": {
+              "tr": "Büyük (25 m² +)",
+              "en": "Large (25 m² +)"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "inverter_technology",
+        "type": "boolean",
+        "label": {
+          "tr": "Inverter teknolojisi önemli mi?",
+          "en": "Is inverter technology important?"
+        },
+        "emoji": "⚡",
+        "tooltip": {
+          "tr": "Inverter klimalar daha az enerji tüketir ve daha sessiz çalışır. Kompresörün hızını ihtiyaca göre ayarlayarak %30-50 daha az elektrik harcar. İlk yatırım maliyeti yüksek olsa da uzun vadede tasarruf sağlar.",
+          "en": "Inverter air conditioners consume less energy and operate more quietly. They save 30-50% less electricity by adjusting compressor speed according to need. Although initial investment is high, they provide long-term savings."
+        },
+        "weight": 0.9
+      },
+      {
+        "id": "energy_efficiency",
+        "type": "single_choice",
+        "label": {
+          "tr": "Enerji verimliliği sizin için ne kadar önemli?",
+          "en": "How important is energy efficiency to you?"
+        },
+        "emoji": "🌿",
+        "tooltip": {
+          "tr": "Yüksek enerji sınıfı (A+++) uzun vadede daha az enerji tüketimi anlamına gelir.",
+          "en": "A high energy class (A+++) means less energy consumption in the long run."
+        },
+        "options": [
+          {
+            "id": "very_important",
+            "label": {
+              "tr": "Çok önemli (A+++)",
+              "en": "Very important (A+++)"
+            }
+          },
+          {
+            "id": "important",
+            "label": {
+              "tr": "Önemli (A++ / A++)",
+              "en": "Important (A++ / A++)"
+            }
+          },
+          {
+            "id": "not_important",
+            "label": {
+              "tr": "Çok önemli değil",
+              "en": "Not very important"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "smart_features",
+        "type": "boolean",
+        "label": {
+          "tr": "Akıllı özellikler (Wi-Fi kontrolü, uygulama) ister misiniz?",
+          "en": "Do you want smart features (Wi-Fi control, app)?"
+        },
+        "emoji": "📱",
+        "tooltip": {
+          "tr": "Akıllı özellikler klimanızı uzaktan kontrol etmenizi sağlar.",
+          "en": "Smart features allow you to control your air conditioner remotely."
+        },
+        "weight": 0.6
+      },
+      {
+        "id": "brand_preference",
+        "type": "single_choice",
+        "label": {
+          "tr": "Marka tercihinizi belirtin",
+          "en": "Specify your brand preference"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Güvendiğiniz veya daha önce deneyimlediğiniz bir marka var mı?",
+          "en": "Is there a brand you trust or have experienced before?"
+        },
+        "options": [
+          {
+            "id": "daikin",
+            "label": {
+              "tr": "Daikin",
+              "en": "Daikin"
+            }
+          },
+          {
+            "id": "mitsubishi",
+            "label": {
+              "tr": "Mitsubishi Electric",
+              "en": "Mitsubishi Electric"
+            }
+          },
+          {
+            "id": "lg",
+            "label": {
+              "tr": "LG",
+              "en": "LG"
+            }
+          },
+          {
+            "id": "samsung",
+            "label": {
+              "tr": "Samsung",
+              "en": "Samsung"
+            }
+          },
+          {
+            "id": "arcelik_beko",
+            "label": {
+              "tr": "Arçelik/Beko",
+              "en": "Arçelik/Beko"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.5
+      }
+    ]
+  },
+  "Television": {
+    "budget_bands": {
+      "tr": [
+        "4.000-10.000₺",
+        "10.000-25.000₺",
+        "25.000-40.000₺",
+        "40.000-80.000₺",
+        "80.000₺+"
+      ],
+      "en": [
+        "$130-330",
+        "$330-830",
+        "$830-1330",
+        "$1330-2660",
+        "$2660+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "screen_size",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekran boyutu ne kadar önemli?",
+          "en": "How important is screen size?"
+        },
+        "emoji": "📺",
+        "tooltip": {
+          "tr": "Ekran boyutu izleme deneyimini doğrudan etkiler. 2-3 metre mesafeden 43-55 inç, 3-4 metre için 55-65 inç ideal. Küçük odalar için büyük ekranlar göz yorgunluğu yaratabilir. Büyük salon için küçük ekran detayları kaçırmanıza neden olabilir. Film keyfi için büyük ekran tercih edilir.",
+          "en": "Screen size directly affects viewing experience. 43-55 inches is ideal for 2-3 meter distance, 55-65 inches for 3-4 meters. Large screens can cause eye strain in small rooms. Small screens for large living rooms may cause you to miss details. Large screen is preferred for movie enjoyment."
+        },
+        "options": [
+          {
+            "id": "small",
+            "label": {
+              "tr": "Küçük (32-43 inç)",
+              "en": "Small (32-43 inch)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (43-55 inç)",
+              "en": "Medium (43-55 inch)"
+            }
+          },
+          {
+            "id": "large",
+            "label": {
+              "tr": "Büyük (55-65 inç)",
+              "en": "Large (55-65 inch)"
+            }
+          },
+          {
+            "id": "xlarge",
+            "label": {
+              "tr": "Çok Büyük (65 inç+)",
+              "en": "Extra Large (65 inch+)"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "resolution",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekran çözünürlüğü ne kadar önemli?",
+          "en": "How important is screen resolution?"
+        },
+        "emoji": "✨",
+        "tooltip": {
+          "tr": "Çözünürlük görüntü kalitesini belirler. Full HD günlük izleme için yeterli, 4K film ve oyun severlere tavsiye edilir. 8K henüz pahalı ve içerik sınırlı. Netflix, YouTube gibi platformlarda 4K içerik arttığı için 4K tercih edilebilir. Büyük ekranlarda yüksek çözünürlük farkı daha belirgin.",
+          "en": "Resolution determines image quality. Full HD is sufficient for daily viewing, 4K is recommended for movie and game lovers. 8K is still expensive and content is limited. 4K may be preferred as 4K content is increasing on platforms like Netflix and YouTube. High resolution difference is more noticeable on large screens."
+        },
+        "options": [
+          {
+            "id": "full_hd",
+            "label": {
+              "tr": "Full HD (1080p)",
+              "en": "Full HD (1080p)"
+            }
+          },
+          {
+            "id": "4k",
+            "label": {
+              "tr": "4K Ultra HD",
+              "en": "4K Ultra HD"
+            }
+          },
+          {
+            "id": "8k",
+            "label": {
+              "tr": "8K Ultra HD",
+              "en": "8K Ultra HD"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "smart_tv",
+        "type": "boolean",
+        "label": {
+          "tr": "Akıllı TV özellikleri (Netflix, YouTube) gerekli mi?",
+          "en": "Are Smart TV features (Netflix, YouTube) necessary?"
+        },
+        "emoji": "🌐",
+        "tooltip": {
+          "tr": "Akıllı TV WiFi ile internete bağlanarak Netflix, YouTube, Disney+ gibi uygulamalara doğrudan erişim sağlar. Ayrıca web taraması, sosyal medya kullanımı mümkün. Normal TV'de bu özellikler için ayrı cihaz (decoder, Chromecast) gerekir. Güncel teknoloji ve sürekli güncellenen uygulamalar sunar.",
+          "en": "Smart TV connects to the internet via WiFi, providing direct access to apps like Netflix, YouTube, Disney+. Web browsing and social media usage are also possible. Normal TV requires separate device (decoder, Chromecast) for these features. Offers current technology and constantly updated applications."
+        },
+        "weight": 0.8
+      },
+      {
+        "id": "panel_type",
+        "type": "single_choice",
+        "label": {
+          "tr": "Panel tipi tercihiniz nedir?",
+          "en": "What is your preferred panel type?"
+        },
+        "emoji": "🖼️",
+        "tooltip": {
+          "tr": "Panel teknolojisi görüntü kalitesini etkiler. OLED mükemmel siyah seviyeler, sınırsız kontrast ve geniş izleme açısı sunar ancak pahalı. QLED daha parlak, HDR performansı iyi, uygun fiyatlı. LED/LCD en ekonomik seçenek. Karanlık odada OLED, aydınlık odada QLED tercih edilir.",
+          "en": "Panel technology affects image quality. OLED offers perfect black levels, unlimited contrast and wide viewing angle but expensive. QLED is brighter, good HDR performance, affordable. LED/LCD is the most economical option. OLED is preferred in dark rooms, QLED in bright rooms."
+        },
+        "options": [
+          {
+            "id": "led",
+            "label": {
+              "tr": "LED",
+              "en": "LED"
+            }
+          },
+          {
+            "id": "qled",
+            "label": {
+              "tr": "QLED",
+              "en": "QLED"
+            }
+          },
+          {
+            "id": "oled",
+            "label": {
+              "tr": "OLED",
+              "en": "OLED"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "brand_preference",
+        "type": "single_choice",
+        "label": {
+          "tr": "Marka tercihin var mı?",
+          "en": "Do you have a brand preference?"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Belirli bir marka mı arıyorsunuz?",
+          "en": "Are you looking for a specific brand?"
+        },
+        "options": [
+          {
+            "id": "samsung",
+            "label": {
+              "tr": "Samsung",
+              "en": "Samsung"
+            }
+          },
+          {
+            "id": "lg",
+            "label": {
+              "tr": "LG",
+              "en": "LG"
+            }
+          },
+          {
+            "id": "sony",
+            "label": {
+              "tr": "Sony",
+              "en": "Sony"
+            }
+          },
+          {
+            "id": "other",
+            "label": {
+              "tr": "Diğer",
+              "en": "Other"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Farketmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  },
+  "Drone": {
+    "budget_bands": {
+      "tr": [
+        "2.000 - 7.000 ₺",
+        "7.000 - 15.000 ₺",
+        "15.000 - 40.000 ₺",
+        "40.000 - 80.000 ₺",
+        "80.000 ₺+"
+      ],
+      "en": [
+        "2.000 - 7.000 ₺",
+        "7.000 - 15.000 ₺",
+        "15.000 - 40.000 ₺",
+        "40.000 - 80.000 ₺",
+        "80.000 ₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "camera_quality",
+        "type": "single_choice",
+        "label": {
+          "tr": "Kamera kalitesi sizin için ne kadar önemli?",
+          "en": "How important is camera quality to you?"
+        },
+        "emoji": "📸",
+        "tooltip": {
+          "tr": "Drone kamerası havacılık fotoğrafçılığı için kritiktir. 4K çözünürlük profesyonel çalışmalar için gerekli, Full HD hobi amaçlı yeterlidir. Gimbal stabilizasyon titremeleri önler. RAW format profesyonel düzenlemede esneklik sağlar. Gece çekimi, HDR ve cinematic modları yaratıcı çekimler için önemlidir.",
+          "en": "Drone camera is critical for aerial photography. 4K resolution is necessary for professional work, Full HD is sufficient for hobby purposes. Gimbal stabilization prevents shaking. RAW format provides flexibility in professional editing. Night shooting, HDR and cinematic modes are important for creative shots."
+        },
+        "options": [
+          {
+            "id": "professional",
+            "label": {
+              "tr": "Çok önemli (Profesyonel düzeyde)",
+              "en": "Very important (Professional level)"
+            }
+          },
+          {
+            "id": "high",
+            "label": {
+              "tr": "Önemli (Yüksek çözünürlük)",
+              "en": "Important (High resolution)"
+            }
+          },
+          {
+            "id": "moderate",
+            "label": {
+              "tr": "Orta seviye yeterli",
+              "en": "Moderate level is sufficient"
+            }
+          },
+          {
+            "id": "basic",
+            "label": {
+              "tr": "Temel düzey yeterli",
+              "en": "Basic level is sufficient"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "flight_time",
+        "type": "single_choice",
+        "label": {
+          "tr": "Uçuş süresi sizin için ne kadar önemli?",
+          "en": "How important is flight time to you?"
+        },
+        "emoji": "🔋",
+        "tooltip": {
+          "tr": "Uçuş süresi çekim kalitesini ve planlama esnekliğini etkiler. Kısa uçuşlar (15-20 dk) hobi için yeterli, uzun projeler (30+ dk) profesyonel çalışmalar için gerekli. Yedek batarya maliyeti de düşünülmeli. Soğuk hava ve yüksek irtifa uçuş süresini azaltır. Hızlı çekim için kısa süre yeterlidir.",
+          "en": "Flight time affects shooting quality and planning flexibility. Short flights (15-20 min) are sufficient for hobby, long projects (30+ min) are necessary for professional work. Spare battery cost should also be considered. Cold weather and high altitude reduce flight time. Short time is sufficient for quick shooting."
+        },
+        "options": [
+          {
+            "id": "40_plus",
+            "label": {
+              "tr": "Çok önemli (40+ dakika)",
+              "en": "Very important (40+ minutes)"
+            }
+          },
+          {
+            "id": "30_40",
+            "label": {
+              "tr": "Önemli (30-40 dakika)",
+              "en": "Important (30-40 minutes)"
+            }
+          },
+          {
+            "id": "20_30",
+            "label": {
+              "tr": "Orta seviye (20-30 dakika)",
+              "en": "Moderate level (20-30 minutes)"
+            }
+          },
+          {
+            "id": "less_than_20",
+            "label": {
+              "tr": "Düşük (20 dakikadan az)",
+              "en": "Low (Less than 20 minutes)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "obstacle_avoidance",
+        "type": "boolean",
+        "label": {
+          "tr": "Engel algılama sistemi gerekli mi?",
+          "en": "Is obstacle avoidance system necessary?"
+        },
+        "emoji": "🛡️",
+        "tooltip": {
+          "tr": "Engel algılama sistemi kaza riskini minimuma indirir ve yeni başlayanlar için hayati önemde. Ağaç dalları, binalar, insanlardan otomatik kaçınma sağlar. Kapalı mekanlarda, orman, şehir çekimlerinde kritik. İleri seviye pilotlar manuel kontrol tercih edebilir. Sensör sayısı (6 yön vs 3 yön) güvenlik seviyesini belirler.",
+          "en": "Obstacle avoidance system minimizes accident risk and is vital for beginners. Provides automatic avoidance from tree branches, buildings, people. Critical for indoor, forest, city shoots. Advanced pilots may prefer manual control. Number of sensors (6-way vs 3-way) determines safety level."
+        },
+        "weight": 0.8
+      },
+      {
+        "id": "range",
+        "type": "single_choice",
+        "label": {
+          "tr": "Menzil sizin için ne kadar önemli?",
+          "en": "How important is range to you?"
+        },
+        "emoji": "🎯",
+        "tooltip": {
+          "tr": "Menzil çekim esnekliğini belirler. Kısa menzil (1km) şehir içi, yakın çekimler için yeterli. Uzun menzil (5km+) doğa, emlak çekimleri için gerekli. WiFi'da sinyal daha zayıf, OcuSync gibi teknolojiler güçlü bağlantı sağlar. Yasal sınırlar var - görüş mesafesinde uçuş zorunlu.",
+          "en": "Range determines shooting flexibility. Short range (1km) is sufficient for urban, close shots. Long range (5km+) is necessary for nature, real estate shoots. Signal is weaker on WiFi, technologies like OcuSync provide strong connection. There are legal limits - flight within line of sight is mandatory."
+        },
+        "options": [
+          {
+            "id": "5km_plus",
+            "label": {
+              "tr": "Çok önemli (5km+)",
+              "en": "Very important (5km+)"
+            }
+          },
+          {
+            "id": "2_5km",
+            "label": {
+              "tr": "Önemli (2-5km)",
+              "en": "Important (2-5km)"
+            }
+          },
+          {
+            "id": "1_2km",
+            "label": {
+              "tr": "Orta (1-2km)",
+              "en": "Moderate (1-2km)"
+            }
+          },
+          {
+            "id": "less_than_1km",
+            "label": {
+              "tr": "Düşük (1km'den az)",
+              "en": "Low (Less than 1km)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "size_portability",
+        "type": "single_choice",
+        "label": {
+          "tr": "Boyut ve taşınabilirlik sizin için ne kadar önemli?",
+          "en": "How important are size and portability to you?"
+        },
+        "emoji": "📏",
+        "tooltip": {
+          "tr": "Drone'un boyutu ve taşınabilirliği sizin için ne kadar önemli? Seyahatlerde kolayca taşımak istiyorsanız, katlanabilir ve hafif bir model tercih edin.",
+          "en": "How important is the size and portability of the drone to you? If you want to carry it easily on travels, prefer a foldable and lightweight model."
+        },
+        "options": [
+          {
+            "id": "very_portable",
+            "label": {
+              "tr": "Çok önemli (Katlanabilir, kompakt)",
+              "en": "Very important (Foldable, compact)"
+            }
+          },
+          {
+            "id": "moderate_portable",
+            "label": {
+              "tr": "Orta seviye (Taşınabilir)",
+              "en": "Moderate level (Portable)"
+            }
+          },
+          {
+            "id": "size_not_important",
+            "label": {
+              "tr": "Boyut önemli değil",
+              "en": "Size is not important"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  },
+  "Phone": {
+    "budget_bands": {
+      "tr": [
+        "3.000-8.000₺",
+        "8.000-15.000₺",
+        "15.000-25.000₺",
+        "25.000-40.000₺",
+        "40.000₺+"
+      ],
+      "en": [
+        "3,000-8,000₺",
+        "8,000-15,000₺",
+        "15,000-25,000₺",
+        "25,000-40,000₺",
+        "40,000₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "camera_quality",
+        "type": "single_choice",
+        "label": {
+          "tr": "Kamera kalitesi sizin için ne kadar önemli?",
+          "en": "How important is camera quality to you?"
+        },
+        "emoji": "📸",
+        "tooltip": {
+          "tr": "Telefon kamerası günlük yaşamın vazgeçilmezi. Instagram, TikTok için iyi kamera şart. Aile fotoğrafları, anı çekimi için orta seviye yeterli. Profesyonel fotoğrafçılık için yüksek MP, optik zoom, gece modu kritik. Selfie kamerası da önemli. Video kalitesi YouTube içerik üreticileri için ayrı faktör.",
+          "en": "Phone camera is indispensable for daily life. Good camera is essential for Instagram, TikTok. Mid-level is sufficient for family photos, memory capture. High MP, optical zoom, night mode critical for professional photography. Selfie camera is also important. Video quality is a separate factor for YouTube content creators."
+        },
+        "options": [
+          {
+            "id": "high_quality",
+            "label": {
+              "tr": "Çok önemli (Yüksek kalite)",
+              "en": "Very important (High quality)"
+            }
+          },
+          {
+            "id": "good_quality",
+            "label": {
+              "tr": "Önemli (İyi kalite)",
+              "en": "Important (Good quality)"
+            }
+          },
+          {
+            "id": "basic",
+            "label": {
+              "tr": "Temel yeterli",
+              "en": "Basic is sufficient"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "battery_life",
+        "type": "single_choice",
+        "label": {
+          "tr": "Pil ömrü beklentiniz nedir?",
+          "en": "What is your battery life expectation?"
+        },
+        "emoji": "🔋",
+        "tooltip": {
+          "tr": "Batarya kapasitesi kullanım şeklinize göre kritik. İş telefonu için tam gün dayanaklılık şart. Oyun, video izleme hızla bittirir. 4000mAh+ yoğun kullanım için ideal. Hızlı şarj teknolojisi zaman kazandırır. Draaibar şarj alışkanlıkları batarya ömrünü etkiler. Power bank bağımlılığından kurtarır.",
+          "en": "Battery capacity is critical according to your usage style. Full day durability is essential for business phones. Gaming and video watching drain quickly. 4000mAh+ is ideal for heavy use. Fast charging technology saves time. Charging habits affect battery life. Saves from power bank dependency."
+        },
+        "options": [
+          {
+            "id": "all_day",
+            "label": {
+              "tr": "Tam gün (Yoğun kullanım)",
+              "en": "Full day (Heavy use)"
+            }
+          },
+          {
+            "id": "one_day",
+            "label": {
+              "tr": "Bir günlük kullanım",
+              "en": "One day of use"
+            }
+          },
+          {
+            "id": "two_days",
+            "label": {
+              "tr": "İki günlük kullanım",
+              "en": "Two days of use"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "storage",
+        "type": "single_choice",
+        "label": {
+          "tr": "Kaç GB depolama alanı yeterli olur?",
+          "en": "How much storage space is sufficient?"
+        },
+        "emoji": "💾",
+        "tooltip": {
+          "tr": "Uygulama, fotoğraf ve video indirme alışkanlıklarınıza göre depolama alanını seçin. Daha fazla depolama alanı, daha fazla içerik anlamına gelir ancak fiyatı da etkiler.",
+          "en": "Choose the storage space based on your app, photo, and video download habits. More storage space means more content but also affects the price."
+        },
+        "options": [
+          {
+            "id": "64gb",
+            "label": {
+              "tr": "64 GB",
+              "en": "64 GB"
+            }
+          },
+          {
+            "id": "128gb",
+            "label": {
+              "tr": "128 GB",
+              "en": "128 GB"
+            }
+          },
+          {
+            "id": "256gb",
+            "label": {
+              "tr": "256 GB",
+              "en": "256 GB"
+            }
+          },
+          {
+            "id": "512gb",
+            "label": {
+              "tr": "512 GB",
+              "en": "512 GB"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "screen_size",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekran boyutu tercihiniz nedir?",
+          "en": "What is your preferred screen size?"
+        },
+        "emoji": "📏",
+        "tooltip": {
+          "tr": "Küçük ekranlar taşınabilirlik sağlar, büyük ekranlar ise daha iyi medya tüketimi sunar.  İhtiyaçlarınıza ve kullanım alışkanlıklarınıza uygun boyutu seçin.",
+          "en": "Smaller screens offer portability, while larger screens provide better media consumption. Choose the size that suits your needs and usage habits."
+        },
+        "options": [
+          {
+            "id": "small",
+            "label": {
+              "tr": "Küçük (6 inç altı)",
+              "en": "Small (Under 6 inches)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (6-6.5 inç)",
+              "en": "Medium (6-6.5 inches)"
+            }
+          },
+          {
+            "id": "large",
+            "label": {
+              "tr": "Büyük (6.5 inç üstü)",
+              "en": "Large (Over 6.5 inches)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "processor_performance",
+        "type": "single_choice",
+        "label": {
+          "tr": "İşlemci performansı beklentiniz nedir?",
+          "en": "What is your processor performance expectation?"
+        },
+        "emoji": "⚡",
+        "tooltip": {
+          "tr": "Oyun oynamayı, ağır uygulamaları kullanmayı veya çoklu görev yapmayı planlıyorsanız güçlü bir işlemciye ihtiyacınız olacaktır.  Günlük kullanım için daha düşük performans yeterli olabilir.",
+          "en": "If you plan to play games, use heavy applications, or multitask, you will need a powerful processor. Lower performance may be sufficient for daily use."
+        },
+        "options": [
+          {
+            "id": "high_performance",
+            "label": {
+              "tr": "Yüksek performans (oyunlar, ağır uygulamalar)",
+              "en": "High performance (games, heavy applications)"
+            }
+          },
+          {
+            "id": "medium_performance",
+            "label": {
+              "tr": "Orta performans (günlük kullanım)",
+              "en": "Medium performance (daily use)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  },
+  "Headphones": {
+    "budget_bands": {
+      "tr": [
+        "200-500₺",
+        "500-1000₺",
+        "1000-2000₺",
+        "2000-4000₺",
+        "4000₺+"
+      ],
+      "en": [
+        "200-500₺",
+        "500-1000₺",
+        "1000-2000₺",
+        "2000-4000₺",
+        "4000₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "form_factor",
+        "type": "single_choice",
+        "label": {
+          "tr": "Kulaklık tipi nasıl olmalı?",
+          "en": "What type of headphones are you looking for?"
+        },
+        "emoji": "🎧",
+        "tooltip": {
+          "tr": "Kulak üstü, kulak içi veya kulak üstü modeller arasında seçim yapın. Konfor ve gürültü izolasyonu tercihinizi belirleyin.",
+          "en": "Choose between over-ear, on-ear, or in-ear models. Consider your comfort and noise isolation preferences."
+        },
+        "options": [
+          {
+            "id": "over_ear",
+            "label": {
+              "tr": "Kulak üstü",
+              "en": "Over-ear"
+            }
+          },
+          {
+            "id": "on_ear",
+            "label": {
+              "tr": "Kulak üstü (kapalı)",
+              "en": "On-ear (closed)"
+            }
+          },
+          {
+            "id": "in_ear",
+            "label": {
+              "tr": "Kulak içi",
+              "en": "In-ear"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "wireless",
+        "type": "boolean",
+        "label": {
+          "tr": "Kablosuz kulaklık önemli mi?",
+          "en": "Is wireless functionality important?"
+        },
+        "emoji": "🌐",
+        "tooltip": {
+          "tr": "Kablosuz bağlantı, hareket özgürlüğünü artırır. Kablolu kulaklıklar genellikle daha ucuzdur ve pil ömrü sorunu yaşamaz.",
+          "en": "Wireless connectivity increases freedom of movement. Wired headphones are usually cheaper and don't have battery life issues."
+        },
+        "weight": 0.9
+      },
+      {
+        "id": "anc",
+        "type": "single_choice",
+        "label": {
+          "tr": "Gürültü engelleme özelliği önemli mi?",
+          "en": "How important is noise cancellation?"
+        },
+        "emoji": "🛡️",
+        "tooltip": {
+          "tr": "Aktif gürültü engelleme (ANC), çevresel sesleri azaltır.  Pasif gürültü engelleme ise kulaklık tasarımından kaynaklanır.  İhtiyacınıza göre seçin.",
+          "en": "Active Noise Cancellation (ANC) reduces ambient sounds. Passive noise cancellation comes from the headphone design. Choose based on your needs."
+        },
+        "options": [
+          {
+            "id": "important_anc",
+            "label": {
+              "tr": "Çok önemli (ANC)",
+              "en": "Very important (ANC)"
+            }
+          },
+          {
+            "id": "passive_anc",
+            "label": {
+              "tr": "Önemli (Pasif gürültü azaltma)",
+              "en": "Important (Passive noise reduction)"
+            }
+          },
+          {
+            "id": "not_important",
+            "label": {
+              "tr": "Önemli değil",
+              "en": "Not important"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "sound_quality",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ses kalitesi beklentiniz nedir?",
+          "en": "What is your expectation for sound quality?"
+        },
+        "emoji": "🎯",
+        "tooltip": {
+          "tr": "Müzik türünüze ve ses kalitesi hassasiyetinize bağlı olarak seçim yapın.  Bas ağırlıklı, dengeli, veya tiz ağırlıklı ses profillerini değerlendirin.",
+          "en": "Choose based on your music genre and sensitivity to sound quality. Consider bass-heavy, balanced, or treble-heavy sound profiles."
+        },
+        "options": [
+          {
+            "id": "high_fidelity",
+            "label": {
+              "tr": "Yüksek kalite (Hi-Fi)",
+              "en": "High fidelity (Hi-Fi)"
+            }
+          },
+          {
+            "id": "good",
+            "label": {
+              "tr": "İyi",
+              "en": "Good"
+            }
+          },
+          {
+            "id": "basic",
+            "label": {
+              "tr": "Temel",
+              "en": "Basic"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "comfort",
+        "type": "single_choice",
+        "label": {
+          "tr": "Kulaklık konforu ne kadar önemli?",
+          "en": "How important is headphone comfort?"
+        },
+        "emoji": "😊",
+        "tooltip": {
+          "tr": "Uzun süreli kullanım için hafif ve rahat bir kulaklık seçmek önemlidir.  Kulak yastıklarının malzemesi ve tasarımını göz önünde bulundurun.",
+          "en": "Choosing lightweight and comfortable headphones is important for extended use. Consider the material and design of the earcups."
+        },
+        "options": [
+          {
+            "id": "very_important",
+            "label": {
+              "tr": "Çok önemli",
+              "en": "Very important"
+            }
+          },
+          {
+            "id": "important",
+            "label": {
+              "tr": "Önemli",
+              "en": "Important"
+            }
+          },
+          {
+            "id": "not_important",
+            "label": {
+              "tr": "Önemli değil",
+              "en": "Not important"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      },
+      {
+        "id": "brand_preference",
+        "type": "single_choice",
+        "label": {
+          "tr": "Marka tercihiniz var mı?",
+          "en": "Do you have a brand preference?"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Daha önce kullandığınız ve memnun kaldığınız bir marka var mı?  Marka güvenilirliği ve müşteri desteği önemlidir.",
+          "en": "Is there a brand you've used before and been satisfied with? Brand reliability and customer support are important."
+        },
+        "options": [
+          {
+            "id": "sony",
+            "label": {
+              "tr": "Sony",
+              "en": "Sony"
+            }
+          },
+          {
+            "id": "bose",
+            "label": {
+              "tr": "Bose",
+              "en": "Bose"
+            }
+          },
+          {
+            "id": "sennheiser",
+            "label": {
+              "tr": "Sennheiser",
+              "en": "Sennheiser"
+            }
+          },
+          {
+            "id": "apple",
+            "label": {
+              "tr": "Apple",
+              "en": "Apple"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.5
+      }
+    ]
+  },
+  "Keyboard": {
+    "budget_bands": {
+      "tr": [
+        "200-500₺",
+        "500-1500₺",
+        "1500-4000₺",
+        "4000-8000₺",
+        "8000₺+"
+      ],
+      "en": [
+        "200-500₺",
+        "500-1500₺",
+        "1500-4000₺",
+        "4000-8000₺",
+        "8000₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "keyboard_type",
+        "type": "single_choice",
+        "label": {
+          "tr": "Klavye türü (Membran, Mekanik vb.)",
+          "en": "Keyboard type (Membrane, Mechanical, etc.)"
+        },
+        "emoji": "⌨️",
+        "tooltip": {
+          "tr": "Klavye türü yazım deneyimini köklü şekilde etkiler. Membran klavyeler sessiz, ekonomik, ofis ortamları için ideal. Mekanik klavyeler dokunsal geri bildirim, dayanıklılık (50M+ tuş), özelleştirme imkanı sunar. Oyuncular, programcılar, yoğun yazım yapanlar mekanik tercih eder. Ses seviyesi önemli faktör.",
+          "en": "Keyboard type fundamentally affects typing experience. Membrane keyboards are quiet, economical, ideal for office environments. Mechanical keyboards offer tactile feedback, durability (50M+ keystrokes), customization possibilities. Gamers, programmers, heavy typists prefer mechanical. Noise level is an important factor."
+        },
+        "options": [
+          {
+            "id": "membrane",
+            "label": {
+              "tr": "Membran",
+              "en": "Membrane"
+            }
+          },
+          {
+            "id": "mechanical",
+            "label": {
+              "tr": "Mekanik",
+              "en": "Mechanical"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "switch_type",
+        "type": "single_choice",
+        "label": {
+          "tr": "Mekanik klavye ise switch türü",
+          "en": "Switch type (if mechanical keyboard)"
+        },
+        "emoji": "🎯",
+        "tooltip": {
+          "tr": "Switch türü mekanik klavyenin ruhudur. Cherry MX altın standart (Red:linear/sessiz, Blue:tactile/tıklama sesi, Brown:orta yol). Gateron Cherry'ye benzer, daha pürüzsüz. Kailh uygun fiyatlı alternatif. Linear switchler oyun için, tactile switchler yazım için tercih edilir. Actuation force (45-80g) parmak yorgunluğunu etkiler.",
+          "en": "Switch type is the soul of mechanical keyboard. Cherry MX is gold standard (Red:linear/quiet, Blue:tactile/click sound, Brown:middle ground). Gateron similar to Cherry, smoother. Kailh affordable alternative. Linear switches preferred for gaming, tactile switches for typing. Actuation force (45-80g) affects finger fatigue."
+        },
+        "options": [
+          {
+            "id": "cherry_mx",
+            "label": {
+              "tr": "Cherry MX",
+              "en": "Cherry MX"
+            }
+          },
+          {
+            "id": "kailh",
+            "label": {
+              "tr": "Kailh",
+              "en": "Kailh"
+            }
+          },
+          {
+            "id": "gateron",
+            "label": {
+              "tr": "Gateron",
+              "en": "Gateron"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "backlighting",
+        "type": "single_choice",
+        "label": {
+          "tr": "Arka aydınlatma",
+          "en": "Backlighting"
+        },
+        "emoji": "💡",
+        "tooltip": {
+          "tr": "Arka aydınlatma, karanlık ortamlarda yazmayı kolaylaştırır.  Tek renkli veya RGB aydınlatma seçenekleri mevcuttur.  RGB aydınlatma daha fazla özelleştirme seçeneği sunar.",
+          "en": "Backlighting makes typing easier in dark environments. Single-color or RGB lighting options are available. RGB lighting offers more customization options."
+        },
+        "options": [
+          {
+            "id": "no_backlight",
+            "label": {
+              "tr": "Yok",
+              "en": "None"
+            }
+          },
+          {
+            "id": "single_color",
+            "label": {
+              "tr": "Tek Renkli",
+              "en": "Single Color"
+            }
+          },
+          {
+            "id": "rgb",
+            "label": {
+              "tr": "RGB",
+              "en": "RGB"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "connectivity",
+        "type": "single_choice",
+        "label": {
+          "tr": "Bağlantı türü",
+          "en": "Connectivity type"
+        },
+        "emoji": "🌐",
+        "tooltip": {
+          "tr": "Kablolu klavyeler genellikle daha güvenilirdir, kablosuz klavyeler ise daha fazla hareket özgürlüğü sunar.  Kablosuz klavyelerde düşük gecikme süresi önemlidir.",
+          "en": "Wired keyboards are generally more reliable, while wireless keyboards offer more freedom of movement. Low latency is important for wireless keyboards."
+        },
+        "options": [
+          {
+            "id": "wired",
+            "label": {
+              "tr": "Kablolu",
+              "en": "Wired"
+            }
+          },
+          {
+            "id": "wireless",
+            "label": {
+              "tr": "Kablosuz",
+              "en": "Wireless"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "brand_preference",
+        "type": "single_choice",
+        "label": {
+          "tr": "Marka tercihiniz var mı?",
+          "en": "Do you have a brand preference?"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Daha önce kullandığınız veya güvendiğiniz bir marka var mı? Bazı markalar daha iyi müşteri desteği veya daha uzun garanti süreleri sunabilir.",
+          "en": "Is there a brand you've used before or trust? Some brands may offer better customer support or longer warranty periods."
+        },
+        "options": [
+          {
+            "id": "logitech",
+            "label": {
+              "tr": "Logitech",
+              "en": "Logitech"
+            }
+          },
+          {
+            "id": "corsair",
+            "label": {
+              "tr": "Corsair",
+              "en": "Corsair"
+            }
+          },
+          {
+            "id": "hyperx",
+            "label": {
+              "tr": "HyperX",
+              "en": "HyperX"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  },
+  "Tablet": {
+    "budget_bands": {
+      "tr": [
+        "2.500-5.000₺",
+        "5.500-10.000₺",
+        "11.000-18.000₺",
+        "19.000-30.000₺",
+        "30.000₺+"
+      ],
+      "en": [
+        "2.500-5.000₺",
+        "5.500-10.000₺",
+        "11.000-18.000₺",
+        "19.000-30.000₺",
+        "30.000₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "screen_size",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekran boyutu tercihiniz nedir?",
+          "en": "What is your preferred screen size?"
+        },
+        "emoji": "📏",
+        "tooltip": {
+          "tr": "Ekran boyutu, tablet kullanım deneyiminizi doğrudan etkiler. Daha büyük ekranlar medya tüketimi ve oyun için daha iyi olsa da, taşınabilirlik açısından daha az pratik olabilir. Küçük ekranlar ise daha taşınabilir fakat daha az görsel deneyim sunar. İhtiyaçlarınıza ve kullanım alışkanlıklarınıza göre en uygun boyutu seçmeniz önemlidir. Örneğin, çok fazla video izliyorsanız büyük bir ekran tercih edebilirsiniz, ancak ağırlıklı olarak e-posta ve internet kullanıyorsanız daha küçük bir ekran yeterli olabilir.",
+          "en": "Screen size directly impacts your tablet usage experience. Larger screens are better for media consumption and gaming, but may be less practical in terms of portability. Smaller screens are more portable but offer a less immersive visual experience. Choosing the right size depends on your needs and usage habits. For example, if you watch a lot of videos, you may prefer a larger screen, but if you primarily use email and the internet, a smaller screen might suffice."
+        },
+        "options": [
+          {
+            "id": "small",
+            "label": {
+              "tr": "Küçük (7-8 inç)",
+              "en": "Small (7-8 inch)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (9-10 inç)",
+              "en": "Medium (9-10 inch)"
+            }
+          },
+          {
+            "id": "large",
+            "label": {
+              "tr": "Büyük (11 inç ve üzeri)",
+              "en": "Large (11 inch and above)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "processor_performance",
+        "type": "single_choice",
+        "label": {
+          "tr": "İşlemci performansı ne kadar önemli?",
+          "en": "How important is processor performance?"
+        },
+        "emoji": "⚡",
+        "tooltip": {
+          "tr": "İşlemci performansı, tabletinizin ne kadar hızlı ve sorunsuz çalışacağını belirler. Daha güçlü işlemciler, ağır uygulamaları ve oyunları daha akıcı bir şekilde çalıştırmanıza olanak tanır. Ancak, daha güçlü işlemciler genellikle daha yüksek fiyatlara sahiptir. Günlük kullanım için orta seviye bir işlemci yeterli olabilirken, yoğun oyun veya video düzenleme gibi işlemler için güçlü bir işlemci gereklidir.  İşlemci çekirdek sayısı ve saat hızı performansı etkileyen faktörlerdir.",
+          "en": "Processor performance determines how fast and smoothly your tablet will run. More powerful processors allow you to run demanding applications and games more smoothly. However, more powerful processors usually come at a higher price. A mid-range processor may suffice for daily use, while a powerful processor is necessary for intensive tasks such as gaming or video editing. The number of processor cores and clock speed are factors affecting performance."
+        },
+        "options": [
+          {
+            "id": "low",
+            "label": {
+              "tr": "Düşük (Temel kullanım için)",
+              "en": "Low (For basic use)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (Genel kullanım için)",
+              "en": "Medium (For general use)"
+            }
+          },
+          {
+            "id": "high",
+            "label": {
+              "tr": "Yüksek (Oyun ve yoğun kullanım için)",
+              "en": "High (For gaming and intensive use)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "ram_storage",
+        "type": "single_choice",
+        "label": {
+          "tr": "RAM ve depolama alanı tercihiniz nedir?",
+          "en": "What are your RAM and storage preferences?"
+        },
+        "emoji": "💾",
+        "tooltip": {
+          "tr": "RAM (Bellek), tabletinizin birden fazla uygulamayı aynı anda ne kadar verimli çalıştırabileceğini belirler. Daha fazla RAM, daha fazla uygulama açıp çalıştırmanıza olanak tanır ve performansı artırır. Depolama alanı ise fotoğraf, video, uygulama ve dosyalarınızı saklamak için kullanılır. Daha fazla depolama alanı, daha fazla içerik saklamanıza imkan tanır.  RAM ve depolama alanının büyüklüğü, tabletin fiyatını etkiler. Genel kullanım için 4GB RAM ve 64GB depolama yeterli olabilirken, yoğun kullanım için daha yüksek değerler tercih edilmelidir.",
+          "en": "RAM determines how efficiently your tablet can run multiple apps simultaneously. More RAM allows you to open and run more apps and improves performance. Storage space is used to store your photos, videos, apps, and files. More storage space allows you to store more content. The size of RAM and storage space affects the tablet's price. 4GB RAM and 64GB storage may be sufficient for general use, while higher values should be preferred for intensive use."
+        },
+        "options": [
+          {
+            "id": "low",
+            "label": {
+              "tr": "Düşük (4GB RAM / 64GB Depolama)",
+              "en": "Low (4GB RAM / 64GB Storage)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (6GB RAM / 128GB Depolama)",
+              "en": "Medium (6GB RAM / 128GB Storage)"
+            }
+          },
+          {
+            "id": "high",
+            "label": {
+              "tr": "Yüksek (8GB RAM / 256GB Depolama veya üzeri)",
+              "en": "High (8GB RAM / 256GB Storage or more)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "battery_life",
+        "type": "single_choice",
+        "label": {
+          "tr": "Pil ömrü beklentiniz nedir?",
+          "en": "What is your battery life expectation?"
+        },
+        "emoji": "🔋",
+        "tooltip": {
+          "tr": "Pil ömrü, tabletinizi tek şarjla ne kadar süre kullanabileceğinizi belirler. Günlük kullanım alışkanlıklarınıza bağlı olarak değişir. Yoğun kullanım için uzun pil ömrü önemlidir.  Daha uzun pil ömrü genellikle daha büyük ve daha pahalı piller anlamına gelir.  Günlük kullanım için 8-10 saat pil ömrü yeterli olabilirken, daha uzun süreli kullanım için daha yüksek pil ömrüne sahip bir tablet tercih etmelisiniz.",
+          "en": "Battery life determines how long you can use your tablet on a single charge. It varies depending on your daily usage habits. Long battery life is important for heavy use. Longer battery life usually means larger and more expensive batteries. For daily use, 8-10 hours of battery life may be sufficient, while for longer use, you should prefer a tablet with higher battery life."
+        },
+        "options": [
+          {
+            "id": "short",
+            "label": {
+              "tr": "Kısa (6-8 saat)",
+              "en": "Short (6-8 hours)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (8-10 saat)",
+              "en": "Medium (8-10 hours)"
+            }
+          },
+          {
+            "id": "long",
+            "label": {
+              "tr": "Uzun (10 saat ve üzeri)",
+              "en": "Long (10 hours and above)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "brand_preference",
+        "type": "single_choice",
+        "label": {
+          "tr": "Tercih ettiğiniz bir marka var mı?",
+          "en": "Do you have a preferred brand?"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Marka tercihiniz, tabletinizin kalitesi, dayanıklılığı ve müşteri desteği konusunda beklentilerinizi etkiler. Bazı markalar, belirli özelliklerde veya yazılım güncellemelerinde daha iyi olabilir.  Önceki deneyimlerinize veya güvendiğiniz markalara göre seçim yapabilirsiniz.  Ancak, marka her zaman kaliteyi garanti etmez, özelliklere de dikkat etmek önemlidir.",
+          "en": "Your brand preference affects your expectations regarding the quality, durability, and customer support of your tablet. Some brands may be better in specific features or software updates. You can choose based on your previous experiences or brands you trust. However, brand doesn't always guarantee quality; it's important to pay attention to features as well."
+        },
+        "options": [
+          {
+            "id": "samsung",
+            "label": {
+              "tr": "Samsung",
+              "en": "Samsung"
+            }
+          },
+          {
+            "id": "apple",
+            "label": {
+              "tr": "Apple",
+              "en": "Apple"
+            }
+          },
+          {
+            "id": "xiaomi",
+            "label": {
+              "tr": "Xiaomi",
+              "en": "Xiaomi"
+            }
+          },
+          {
+            "id": "huawei",
+            "label": {
+              "tr": "Huawei",
+              "en": "Huawei"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  },
+  "Monitor": {
+    "budget_bands": {
+      "tr": [
+        "1.500-3.500₺",
+        "3.500-7.000₺",
+        "7.000-15.000₺",
+        "15.000-30.000₺",
+        "30.000₺+"
+      ],
+      "en": [
+        "1.500-3.500₺",
+        "3.500-7.000₺",
+        "7.000-15.000₺",
+        "15.000-30.000₺",
+        "30.000₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "screen_size",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekran boyutu ne kadar önemli?",
+          "en": "How important is screen size?"
+        },
+        "emoji": "📏",
+        "tooltip": {
+          "tr": "Ekran boyutu, kullanım alanınızı ve konforunuzu doğrudan etkiler.  Küçük ekranlar (24 inç) masaüstü kullanımında yerden tasarruf sağlar ancak büyük belgeleri görüntülemek zorlaştırabilir.  Büyük ekranlar (32 inç veya üzeri) daha rahat bir izleme deneyimi sunar, ancak daha fazla masaüstü alanı gerektirir ve daha pahalı olabilir.  İhtiyaçlarınıza ve kullanım alanınıza göre uygun boyutu seçmek önemlidir.",
+          "en": "Screen size directly impacts your workspace and comfort. Smaller screens (24 inches) save desktop space but can make viewing large documents difficult. Larger screens (32 inches or more) offer a more comfortable viewing experience but require more desktop space and can be more expensive. Choosing the right size based on your needs and workspace is crucial."
+        },
+        "options": [
+          {
+            "id": "small",
+            "label": {
+              "tr": "Küçük (20-24 inç)",
+              "en": "Small (20-24 inch)"
+            }
+          },
+          {
+            "id": "medium",
+            "label": {
+              "tr": "Orta (24-27 inç)",
+              "en": "Medium (24-27 inch)"
+            }
+          },
+          {
+            "id": "large",
+            "label": {
+              "tr": "Büyük (27-32 inç)",
+              "en": "Large (27-32 inch)"
+            }
+          },
+          {
+            "id": "xlarge",
+            "label": {
+              "tr": "Çok Büyük (32 inç+)",
+              "en": "Extra Large (32 inch+)"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "resolution",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekran çözünürlüğü ne kadar önemli?",
+          "en": "How important is screen resolution?"
+        },
+        "emoji": "✨",
+        "tooltip": {
+          "tr": "Çözünürlük, görüntü netliğini ve ayrıntı seviyesini belirler.  1080p (Full HD) günlük kullanım için yeterlidir, ancak daha büyük ekranlarda pikseller daha belirgin olabilir. 1440p (QHD) daha net ve detaylı bir görüntü sunar, özellikle grafik tasarım veya fotoğraf düzenleme gibi işlerde fark edilir. 4K ultra yüksek çözünürlük, en keskin ve detaylı görüntüyü sağlar, ancak daha yüksek fiyatlı monitörlerde bulunur.",
+          "en": "Resolution determines image clarity and detail level. 1080p (Full HD) is sufficient for daily use, but pixels may be more noticeable on larger screens. 1440p (QHD) provides a sharper and more detailed image, especially noticeable in tasks like graphic design or photo editing. 4K ultra-high resolution provides the sharpest and most detailed image, but is found in higher-priced monitors."
+        },
+        "options": [
+          {
+            "id": "full_hd",
+            "label": {
+              "tr": "Full HD (1080p)",
+              "en": "Full HD (1080p)"
+            }
+          },
+          {
+            "id": "qhd",
+            "label": {
+              "tr": "QHD (1440p)",
+              "en": "QHD (1440p)"
+            }
+          },
+          {
+            "id": "4k",
+            "label": {
+              "tr": "4K Ultra HD",
+              "en": "4K Ultra HD"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "refresh_rate",
+        "type": "single_choice",
+        "label": {
+          "tr": "Yenileme hızı ne kadar önemli?",
+          "en": "How important is refresh rate?"
+        },
+        "emoji": "⚡",
+        "tooltip": {
+          "tr": "Yenileme hızı, saniyedeki görüntü sayısını belirler ve oyun performansını ve genel akıcılığı etkiler. 60Hz standarttır, ancak 75Hz veya 144Hz gibi daha yüksek yenileme hızları, özellikle hızlı hareketli oyunlarda daha akıcı bir görüntü sağlar.  Daha yüksek yenileme hızları daha pahalıdır, ancak daha pürüzsüz bir deneyim sunar.",
+          "en": "Refresh rate determines the number of frames per second and affects gaming performance and overall smoothness. 60Hz is standard, but higher refresh rates like 75Hz or 144Hz provide a smoother image, especially in fast-paced games. Higher refresh rates are more expensive but offer a smoother experience."
+        },
+        "options": [
+          {
+            "id": "60hz",
+            "label": {
+              "tr": "60Hz",
+              "en": "60Hz"
+            }
+          },
+          {
+            "id": "75hz",
+            "label": {
+              "tr": "75Hz",
+              "en": "75Hz"
+            }
+          },
+          {
+            "id": "144hz",
+            "label": {
+              "tr": "144Hz",
+              "en": "144Hz"
+            }
+          },
+          {
+            "id": "240hz_plus",
+            "label": {
+              "tr": "240Hz+",
+              "en": "240Hz+"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "panel_type",
+        "type": "single_choice",
+        "label": {
+          "tr": "Panel tipi (IPS, VA, TN) ne kadar önemli?",
+          "en": "How important is panel type (IPS, VA, TN)?"
+        },
+        "emoji": "🖥️",
+        "tooltip": {
+          "tr": "Panel tipi, renk doğruluğu, görüntü açıları ve tepki sürelerini etkiler. IPS paneller en iyi renk doğruluğunu ve geniş görüş açılarını sunar, ancak daha pahalıdır. VA paneller iyi renk doğruluğu ve yüksek kontrast oranları sunar. TN paneller en uygun fiyatlıdır, ancak renk doğruluğu ve görüş açıları daha sınırlıdır.  Kullanım amacınıza göre uygun panel tipini seçmek önemlidir.",
+          "en": "Panel type affects color accuracy, viewing angles, and response times. IPS panels offer the best color accuracy and wide viewing angles but are more expensive. VA panels offer good color accuracy and high contrast ratios. TN panels are the most affordable but have more limited color accuracy and viewing angles. Choosing the right panel type based on your usage is important."
+        },
+        "options": [
+          {
+            "id": "ips",
+            "label": {
+              "tr": "IPS",
+              "en": "IPS"
+            }
+          },
+          {
+            "id": "va",
+            "label": {
+              "tr": "VA",
+              "en": "VA"
+            }
+          },
+          {
+            "id": "tn",
+            "label": {
+              "tr": "TN",
+              "en": "TN"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "brand_preference",
+        "type": "single_choice",
+        "label": {
+          "tr": "Marka tercihiniz var mı?",
+          "en": "Do you have a brand preference?"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Bazı markalar belirli teknolojilerde veya müşteri hizmetlerinde daha iyi olabilir. Daha önce kullandığınız veya güvendiğiniz bir marka varsa, bu tercihinizi etkileyebilir.  Ancak, fiyat ve özelliklere odaklanarak en iyi seçimi yapabilirsiniz.",
+          "en": "Some brands may be better in specific technologies or customer service. If you have used or trust a specific brand before, this may influence your preference. However, you can make the best choice by focusing on price and features."
+        },
+        "options": [
+          {
+            "id": "asus",
+            "label": {
+              "tr": "Asus",
+              "en": "Asus"
+            }
+          },
+          {
+            "id": "lg",
+            "label": {
+              "tr": "LG",
+              "en": "LG"
+            }
+          },
+          {
+            "id": "samsung",
+            "label": {
+              "tr": "Samsung",
+              "en": "Samsung"
+            }
+          },
+          {
+            "id": "msi",
+            "label": {
+              "tr": "MSI",
+              "en": "MSI"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  },
+  "Mouse": {
+    "budget_bands": {
+      "tr": [
+        "100-300₺",
+        "300-700₺",
+        "700-1500₺",
+        "1500-3000₺+",
+        "500-5000₺+"
+      ],
+      "en": [
+        "100-300₺",
+        "300-700₺",
+        "700-1500₺",
+        "1500-3000₺+",
+        "500-5000₺+"
+      ]
+    },
+    "specs": [
+      {
+        "id": "sensor_type",
+        "type": "single_choice",
+        "label": {
+          "tr": "Sensör tipi ne kadar önemli?",
+          "en": "How important is sensor type?"
+        },
+        "emoji": "🎯",
+        "tooltip": {
+          "tr": "Sensör, fare hassasiyetini belirler. Optik sensörler daha yaygın, lazer sensörler yüksek hassasiyet gerektiren işler için daha uygundur.  DPI (Dots Per Inch) değeri yüksek olan sensörler daha hassastır. Oyun için yüksek DPI, genel kullanım için orta seviye DPI yeterlidir. Lazer sensörler genellikle daha pahalıdır.",
+          "en": "The sensor determines mouse sensitivity. Optical sensors are more common, laser sensors are better suited for tasks requiring high precision.  DPI (Dots Per Inch) is a measure of sensitivity. High DPI is good for gaming, medium DPI is sufficient for general use. Laser sensors are usually more expensive."
+        },
+        "options": [
+          {
+            "id": "optical_high",
+            "label": {
+              "tr": "Yüksek hassasiyetli optik (10000 DPI +)",
+              "en": "High precision optical (10000 DPI +)"
+            }
+          },
+          {
+            "id": "optical_mid",
+            "label": {
+              "tr": "Orta hassasiyetli optik (2000-10000 DPI)",
+              "en": "Medium precision optical (2000-10000 DPI)"
+            }
+          },
+          {
+            "id": "laser",
+            "label": {
+              "tr": "Lazer sensör",
+              "en": "Laser sensor"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "connectivity",
+        "type": "single_choice",
+        "label": {
+          "tr": "Bağlantı tipi ne kadar önemli?",
+          "en": "How important is connection type?"
+        },
+        "emoji": "⚡",
+        "tooltip": {
+          "tr": "Kablosuz fareler masaüstü düzenini temiz tutar ve kablo karmaşasını önler. Ancak pil ömrü ve gecikme süresi göz önünde bulundurulmalıdır. Kablolu fareler daha güvenilir ve düşük gecikme süresi sunar, ancak hareket özgürlüğünü kısıtlar. Kablosuz fareler genellikle daha pahalıdır.",
+          "en": "Wireless mice keep the desktop tidy and prevent cable clutter. However, battery life and latency should be considered. Wired mice are more reliable and offer low latency, but limit freedom of movement. Wireless mice are usually more expensive."
+        },
+        "options": [
+          {
+            "id": "wired",
+            "label": {
+              "tr": "Kablolu",
+              "en": "Wired"
+            }
+          },
+          {
+            "id": "wireless",
+            "label": {
+              "tr": "Kablosuz",
+              "en": "Wireless"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.9
+      },
+      {
+        "id": "ergonomics",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ergonomi ne kadar önemli?",
+          "en": "How important is ergonomics?"
+        },
+        "emoji": "🖱️",
+        "tooltip": {
+          "tr": "Ergonomik tasarım, uzun süreli kullanımda bile el yorgunluğunu azaltır.  Özellikle avuç içi boyutu ve el kavrama şekline uygun bir fare seçmek önemlidir.  Ergonomik fareler genellikle daha yüksek fiyatlıdır ancak sağlık ve konfor açısından uzun vadede fayda sağlar.",
+          "en": "Ergonomic design reduces hand fatigue even with prolonged use. Choosing a mouse that suits your palm size and grip style is important. Ergonomic mice are usually more expensive but provide long-term benefits in terms of health and comfort."
+        },
+        "options": [
+          {
+            "id": "very_important",
+            "label": {
+              "tr": "Çok önemli (Ergonomik tasarım)",
+              "en": "Very important (Ergonomic design)"
+            }
+          },
+          {
+            "id": "important",
+            "label": {
+              "tr": "Önemli",
+              "en": "Important"
+            }
+          },
+          {
+            "id": "not_important",
+            "label": {
+              "tr": "Önemli değil",
+              "en": "Not important"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.8
+      },
+      {
+        "id": "buttons_and_features",
+        "type": "single_choice",
+        "label": {
+          "tr": "Ekstra tuşlar ve özellikler önemli mi?",
+          "en": "Are extra buttons and features important?"
+        },
+        "emoji": "⌨️",
+        "tooltip": {
+          "tr": "Ekstra tuşlar, özelleştirilebilir DPI ayarları, programlanabilir makro desteği gibi özellikler, verimliliği artırabilir ve iş akışınızı hızlandırabilir. Özellikle oyun veya grafik tasarım gibi alanlarda faydalıdır. Ancak, bu özellikler fiyatı artırır. İhtiyacınıza göre değerlendirin.",
+          "en": "Extra buttons, customizable DPI settings, programmable macro support, and other features can increase efficiency and speed up your workflow. Particularly useful in gaming or graphic design. However, these features increase the price. Consider your needs."
+        },
+        "options": [
+          {
+            "id": "yes_many",
+            "label": {
+              "tr": "Evet, birçok ek özellik istiyorum",
+              "en": "Yes, I want many extra features"
+            }
+          },
+          {
+            "id": "yes_few",
+            "label": {
+              "tr": "Evet, birkaç ek özellik yeterli",
+              "en": "Yes, a few extra features are enough"
+            }
+          },
+          {
+            "id": "no",
+            "label": {
+              "tr": "Hayır, ek özelliklere ihtiyacım yok",
+              "en": "No, I don't need extra features"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.7
+      },
+      {
+        "id": "brand",
+        "type": "single_choice",
+        "label": {
+          "tr": "Marka tercihiniz var mı?",
+          "en": "Do you have a brand preference?"
+        },
+        "emoji": "🏢",
+        "tooltip": {
+          "tr": "Bazı markalar belirli özelliklerde veya dayanıklılıkta daha iyi olabilir.  Örneğin Logitech, Corsair ve Razer oyun farelerinde popüler markalardır.  Daha önce kullandığınız ve memnun kaldığınız bir marka varsa onu tercih edebilirsiniz. Ancak, markalar genellikle fiyatlandırmada farklılık gösterir.",
+          "en": "Some brands may be better in certain features or durability. For example, Logitech, Corsair, and Razer are popular brands for gaming mice. If you have previously used and been satisfied with a brand, you can prefer it. However, brands often differ in pricing."
+        },
+        "options": [
+          {
+            "id": "logitech",
+            "label": {
+              "tr": "Logitech",
+              "en": "Logitech"
+            }
+          },
+          {
+            "id": "razer",
+            "label": {
+              "tr": "Razer",
+              "en": "Razer"
+            }
+          },
+          {
+            "id": "corsair",
+            "label": {
+              "tr": "Corsair",
+              "en": "Corsair"
+            }
+          },
+          {
+            "id": "other",
+            "label": {
+              "tr": "Diğer",
+              "en": "Other"
+            }
+          },
+          {
+            "id": "no_preference",
+            "label": {
+              "tr": "Fark etmez",
+              "en": "No preference"
+            }
+          }
+        ],
+        "weight": 0.6
+      }
+    ]
+  }
+}

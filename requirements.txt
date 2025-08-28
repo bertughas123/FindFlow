@@ -1,0 +1,32 @@
+# FindFlow Python BaÄŸÄ±mlÄ±lÄ±klarÄ±
+# =================================
+# 
+# # Bu dosya, FindFlow uygulamasÄ±nÄ±n Ã§alÄ±ÅŸmasÄ± iÃ§in gerekli Python paketlerini listeler.
+# 
+# Ana Bağımlılıklar:
+# - Flask: Web framework (backend API için)
+# - dotenv: Environment variables yönetimi (.env dosyası için)
+# - google-generativeai: Gemini AI entegrasyonu (ürün önerisi için)
+# - requests: HTTP istekleri (SerpAPI için)
+# 
+# Kurulum:
+#     pip install -r requirements.txt
+# 
+# Not: 
+# - GEMINI_API_KEY environment variable'ı .env dosyasında tanımlanmalıdır.
+# - SERPAPI_KEY environment variable'ı .env dosyasında tanımlanmalıdır (Modern Search için)
+# 
+# Kullanım:
+#     python run.py
+#     # Uygulama http://localhost:8080 adresinde çalışır
+# 
+# Geliştirme Notları:
+# - Flask debug modu açık (production'da kapatılmalı)
+# - Gemini API anahtarı .env dosyasından okunur
+# - Amazon API anahtarı .env dosyasından okunur
+# - Tüm bağımlılıklar otomatik olarak kurulur
+
+Flask
+python-dotenv
+google-generativeai
+requests
